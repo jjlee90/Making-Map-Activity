@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive map</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a49db4aae3.js" crossorigin="anonymous"></script>
+    <!-- leaflet style sheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <!-- font awesome  -->
+
+    <!-- leaflet js file  -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <!-- my javascript file -->
+    <script src="app.js" defer></script>
+</head>
+
+
+<!-- return is underlined red but it works -->
+
+<body>
+    <form action="" id="selectMenu" onsubmit="return false" onchange="removePrevious()">
+        <label for="business">Choose a business</label>
+        <select name="business" id="business">
+            <option value="coffee " id="coffee ">Coffee</option>
+            <option value="restaurant " id="restaurant ">Restaurant</option>
+            <option value="hotel " id="hotel ">Hotel</option>
+            <option value="market " id="market ">Market</option>
+        </select>
+
+        <button id="submit">Submit</button>
+
+    </form>
+
+    <div id="map"></div>
+    <!-- <i class="fa-solid fa-location-pin pin "></i> -->
+
+</body>
+
+</html>
